@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular ranga';
+  url = 'https://www.youtube.com/watch?v=k5E2AVpwsko';
 }
