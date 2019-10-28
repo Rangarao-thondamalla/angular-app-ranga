@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular ranga';
+  name = 'Angular ranga time is: ';
   url = 'https://www.youtube.com/watch?v=k5E2AVpwsko';
 }
