@@ -1,1 +1,10 @@
 /* Add application styles & imports to this file! */
+h2{
+  color: green;
+}
+h1{
+  color: red;
+}
+ul, li{
+  color:blue;
+}
