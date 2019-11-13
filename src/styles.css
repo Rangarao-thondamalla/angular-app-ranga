@@ -1,4 +1,7 @@
 /* Add application styles & imports to this file! */
+body{
+  padding: 20px;
+}
 h2{
   color: green;
 }
