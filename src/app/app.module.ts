@@ -10,10 +10,12 @@ import { AuthorComponent } from './author.component';
 import { AuthorService } from './author.service';
 import { EmployeeComponent } from './employee.component';
 import { EmployeeService } from './employee.service';
+import { FavoriteComponent} from './favorite.component';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, CoursesComponent , AuthorComponent, EmployeeComponent],
+  declarations: [ AppComponent, HelloComponent, CoursesComponent , AuthorComponent, EmployeeComponent, FavoriteComponent, PanelComponent],
   bootstrap:    [ AppComponent ],
   providers:    [ CoursesService ,AuthorService ,EmployeeService ]
 })
