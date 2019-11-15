@@ -3,7 +3,6 @@ import { CoursesService} from './courses.service';
 @Component({
   selector : 'courses',
   template : `<h2>{{ title }}</h2>
-    <img src= "{{imageUrl}}" />
       <ul>
         <li *ngFor="let course of courses">
           {{course}}
@@ -14,8 +13,8 @@ import { CoursesService} from './courses.service';
       {{courseData.title | uppercase}}<br>
        {{courseData.rating}}<br>
         {{courseData.price}}<br>
-         {{courseData.students}}<br>
-          {{courseData.releaseData}}<br>
+        {{courseData.students}}<br>
+        {{courseData.releaseData}}<br>
 
   `
 })
@@ -42,4 +41,5 @@ export class CoursesComponent{
     price :190.92,
     releaseData: new Date(2019, 11 , 12)
   }
+  
 }
