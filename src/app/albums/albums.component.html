@@ -1,0 +1,19 @@
+<p>
+albums works!
+</p>
+
+<div class="table-responsive"> 
+<table class="table table-bordered" cellpadding="5px" cellspacing="5px" border="2">
+  <tr *ngFor="let album of albums">
+    <td>
+        {{album.userId}}
+    </td>
+      <td>
+        {{album.id}}
+    </td>
+    <td>
+        {{album.title}}
+    </td>
+  </tr>
+</table>
+</div>

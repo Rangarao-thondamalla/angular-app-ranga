@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -12,10 +13,12 @@ import { EmployeeComponent } from './employee.component';
 import { EmployeeService } from './employee.service';
 import { FavoriteComponent} from './favorite.component';
 import { PanelComponent } from './panel/panel.component';
+import { PostsComponent } from './posts/posts.component';
+import { AlbumsComponent } from './albums/albums.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, CoursesComponent , AuthorComponent, EmployeeComponent, FavoriteComponent, PanelComponent],
+  imports:      [ BrowserModule, FormsModule ,HttpModule],
+  declarations: [ AppComponent, HelloComponent, CoursesComponent , AuthorComponent, EmployeeComponent, FavoriteComponent, PanelComponent, PostsComponent, AlbumsComponent],
   bootstrap:    [ AppComponent ],
   providers:    [ CoursesService ,AuthorService ,EmployeeService ]
 })
