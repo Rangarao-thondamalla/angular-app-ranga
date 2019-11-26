@@ -1,0 +1,10 @@
+<p>
+add-list works!
+</p>
+
+<input type="text" name="name" [(ngModel)]="message"/>
+<input type="button" value="submit" (click)= "onClick()" />
+
+<ul *ngFor="let item of items">
+  <li>{{item}}</li>
+</ul>

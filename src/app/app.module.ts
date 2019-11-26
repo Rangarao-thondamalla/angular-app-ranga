@@ -15,10 +15,11 @@ import { FavoriteComponent} from './favorite.component';
 import { PanelComponent } from './panel/panel.component';
 import { PostsComponent } from './posts/posts.component';
 import { AlbumsComponent } from './albums/albums.component';
+import { AddListComponent } from './add-list/add-list.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ,HttpModule],
-  declarations: [ AppComponent, HelloComponent, CoursesComponent , AuthorComponent, EmployeeComponent, FavoriteComponent, PanelComponent, PostsComponent, AlbumsComponent],
+  declarations: [ AppComponent, HelloComponent, CoursesComponent , AuthorComponent, EmployeeComponent, FavoriteComponent, PanelComponent, PostsComponent, AlbumsComponent, AddListComponent],
   bootstrap:    [ AppComponent ],
   providers:    [ CoursesService ,AuthorService ,EmployeeService ]
 })
