@@ -1,17 +1,20 @@
 <p>
 posts works!
 </p>
-
-<!-- <ul class="list-group">
+ <input (keyup.enter)="createPost(event)" #title type="text" class="form-control" placeholder="Titile of New Post">
+<ul class="list-group">
   <li class="list-group-item" *ngFor="let post of posts">
+    <button class="btn btn-deafult btn-sm" (click)="updatePost(post)">
+      update
+    </button>
+     <button class="btn btn-deafult btn-sm" (click)="deletePost(post)">
+      Delete
+    </button>
         {{post.title}}
   </li>
-</ul> -->
-<form>
-    <input type="text" class="form-control" placeholder="Titile of New Post">
-</form>
-<br>
-<div class="table-responsive"> 
+</ul>
+
+<!-- <div class="table-responsive"> 
 <table class="table table-bordered" cellpadding="5px" cellspacing="5px" border="2">
   <tr *ngFor="let post of posts">
     <td>
@@ -28,4 +31,5 @@ posts works!
     </td>
   </tr>
 </table>
-</div>
+
+</div> -->
