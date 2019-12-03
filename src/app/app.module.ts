@@ -16,11 +16,12 @@ import { PanelComponent } from './panel/panel.component';
 import { PostsComponent } from './posts/posts.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { AddListComponent } from './add-list/add-list.component';
+import { PostService } from './posts/post.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ,HttpModule],
   declarations: [ AppComponent, HelloComponent, CoursesComponent , AuthorComponent, EmployeeComponent, FavoriteComponent, PanelComponent, PostsComponent, AlbumsComponent, AddListComponent],
   bootstrap:    [ AppComponent ],
-  providers:    [ CoursesService ,AuthorService ,EmployeeService ]
+  providers:    [ CoursesService ,AuthorService ,EmployeeService, PostService ]
 })
 export class AppModule { }
