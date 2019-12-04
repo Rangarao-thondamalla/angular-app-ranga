@@ -1,5 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Http } from "@angular/http";
+import{ Observable } from 'rxjs/Observable';
+import { AppError } from './app-error';
+import { NotFoundError } from './not-found-error';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/observable/throw';
 
 @Injectable()
 export class PostService {
@@ -14,7 +19,13 @@ export class PostService {
   updatePosts(post){
     return this.http.patch(this.url + '/' + post.id  , JSON.stringify(post))
   }
-  deletePosts(post){
-       return this.http.delete(this.url + '/' + post.id)
+  deletePosts(id){
+       return this.http.delete(this.url + '/' + id)
+       .catch((error: Response)=>{
+         if(error.status === 404)
+            return Observable.throw( new NotFoundError());
+
+         return Observable.throw( new AppError(error));
+       });
   }
 }
