@@ -18,24 +18,14 @@ import { AlbumsComponent } from './albums/albums.component';
 import { AddListComponent } from './add-list/add-list.component';
 import { PostService } from './posts/post.service';
 import { RouterModule } from '@angular/router';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { Page1Component } from './page-1/page-1.component';
-import { Page2Component } from './page-2/page-2.component';
 
 @NgModule({
   imports:      [
      BrowserModule, 
      FormsModule ,
-     HttpModule,
-     RouterModule.forRoot([
-       {path :'page-1',component : Page1Component},
-       {path :'page-2',component : Page2Component},
-       {path :'courses',component : CoursesComponent},
-       {path :'employee',component : EmployeeComponent},
-       {path :'**',component : PageNotFoundComponent},
-     ])
+     HttpModule
      ],
-  declarations: [ AppComponent, HelloComponent, CoursesComponent , AuthorComponent, EmployeeComponent, FavoriteComponent, PanelComponent, PostsComponent, AlbumsComponent, AddListComponent, PageNotFoundComponent, Page1Component, Page2Component],
+  declarations: [ AppComponent, HelloComponent, CoursesComponent , AuthorComponent, EmployeeComponent, FavoriteComponent, PanelComponent, PostsComponent, AlbumsComponent, AddListComponent],
   bootstrap:    [ AppComponent ],
   providers:    [ CoursesService ,AuthorService ,EmployeeService, PostService ]
 })
