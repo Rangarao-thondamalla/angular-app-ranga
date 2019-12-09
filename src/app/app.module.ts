@@ -18,6 +18,7 @@ import { AlbumsComponent } from './albums/albums.component';
 import { AddListComponent } from './add-list/add-list.component';
 import { PostService } from './posts/post.service';
 import { RouterModule } from '@angular/router';
+import { AnimationsComponent } from './animations/animations.component';
 
 @NgModule({
   imports:      [
@@ -25,7 +26,7 @@ import { RouterModule } from '@angular/router';
      FormsModule ,
      HttpModule
      ],
-  declarations: [ AppComponent, HelloComponent, CoursesComponent , AuthorComponent, EmployeeComponent, FavoriteComponent, PanelComponent, PostsComponent, AlbumsComponent, AddListComponent],
+  declarations: [ AppComponent, HelloComponent, CoursesComponent , AuthorComponent, EmployeeComponent, FavoriteComponent, PanelComponent, PostsComponent, AlbumsComponent, AddListComponent, AnimationsComponent],
   bootstrap:    [ AppComponent ],
   providers:    [ CoursesService ,AuthorService ,EmployeeService, PostService ]
 })
