@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -19,14 +20,17 @@ import { AddListComponent } from './add-list/add-list.component';
 import { PostService } from './posts/post.service';
 import { RouterModule } from '@angular/router';
 import { AnimationsComponent } from './animations/animations.component';
+import { TodosComponent } from './todos/todos.component';
+
 
 @NgModule({
   imports:      [
      BrowserModule, 
      FormsModule ,
-     HttpModule
+     HttpModule,
+     BrowserAnimationsModule
      ],
-  declarations: [ AppComponent, HelloComponent, CoursesComponent , AuthorComponent, EmployeeComponent, FavoriteComponent, PanelComponent, PostsComponent, AlbumsComponent, AddListComponent, AnimationsComponent],
+  declarations: [ AppComponent, HelloComponent, CoursesComponent , AuthorComponent, EmployeeComponent, FavoriteComponent, PanelComponent, PostsComponent, AlbumsComponent, AddListComponent, AnimationsComponent, TodosComponent],
   bootstrap:    [ AppComponent ],
   providers:    [ CoursesService ,AuthorService ,EmployeeService, PostService ]
 })
